@@ -5,7 +5,7 @@ function loadCountries() {
 
     let body = "";
 
-    fetch("/countries.json")
+    fetch("./countries.json")
         .then(res => res.json())
         .then(dataList => {
             countriesArrayList = dataList;
